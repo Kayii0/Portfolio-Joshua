@@ -1,0 +1,420 @@
+/* --- Reset de base (pour éviter les marges par défaut) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* --- SECTION HERO --- */
+.hero-section {
+    /* 1. Taille et Position */
+    width: 100%;
+    min-height: 100vh; /* Prend 100% de la hauteur de l'écran (Viewport Height) */
+
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../assets/img/galax.jpg');
+    
+    
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+    /* 4. Centrer le texte au milieu de l'écran */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    
+
+    color: white; 
+}
+
+/* A propos */
+.container-split {
+    display: flex;          
+    align-items: center;   
+    justify-content: space-between; 
+    gap: 40px;              
+    padding: 50px;
+    background-color: #1f0b20;
+}
+
+.text-side {
+    flex: 1;               
+    color: white;
+    font-size: x-large;
+}
+
+strong {
+    color: #ce6cd0; 
+}
+
+.image-side {
+    flex: 1;             
+    text-align: right;     
+}
+
+.image-side img {
+    max-width: 80%;      
+    height: auto;          
+    border-radius: 40px;   
+    box-shadow: 4px 4px 8px 4px rgba(246, 45, 216, 0.437); 
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.hero-image {
+    width: 140px;
+    height: 150px;
+    margin-top: auto;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    background-color: #150915;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+
+/* Mes projets */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Le conteneur qui aligne les cartes */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;       
+    justify-content: center;
+    padding: 40px;
+    
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../assets/img/galaxy4.jpg'); /* Ajuste le nom du fichier */
+    
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Style de la carte */
+.project-card {
+    background-color: #3b1e34; 
+    border-radius: 15px;
+    overflow: hidden;          /* Pour que l'image ne dépasse pas des bords arrondis */
+    width: 350px;              
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Petit effet de levée au survol */
+}
+
+/* L'image en haut */
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+/* Contenu textuel */
+.card-content {
+    padding: 20px;
+    color: white;
+}
+
+.view-project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #582a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Le petit badge de l'année */
+.year-badge {
+    background-color: #634b5f;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Les tags de techno */
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    background-color: #0f172a;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    border: 1px solid #334155;
+}
+
+/* Competences */
+
+.title-comp {
+    font-size: 2.5rem;
+    color: white;
+    background-color: #0b1120;
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitle-comp {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    background-color: #0b1120;
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 60px;
+        background-color: #0b1120;
+}   
+
+.skill-item {
+    background: rgba(30, 41, 59, 0.4);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #f8fafc;
+    font-size: 0.9rem;
+}
+
+.skill-percentage {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* La Jauge */
+.skill-gauge {
+    display: flex;
+    gap: 6px; /* Espace entre les segments */
+}
+
+.dot {
+    flex: 1;         /* Chaque segment prend la même largeur */
+    height: 6px;
+    background: #36243c; /* Couleur quand c'est "vide" */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Le segment "actif" avec l'effet néon bleu */
+.dot.active {
+    background: #eb38f8; 
+    box-shadow: 0 0 8px rgba(239, 56, 248, 0.6);
+}
+
+/* Effet au survol de la carte */
+.skill-item:hover .dot.active {
+    background: #fc7deb; /* Devient encore plus brillant au survol */
+    box-shadow: 0 0 12px rgba(245, 56, 248, 0.8);
+}
+
+/* Mon parcours */
+
+.parcours-section {
+    background-color: #160b20;
+    padding: 80px 20px;
+    color: white;
+}
+
+.title-parcours {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #f8fafc;
+}
+
+/* --- LA LIGNE CENTRALE --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* On crée la ligne verticale avec un pseudo-élément */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #cb38f8, #cf38f8, transparent);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: 0;
+}
+
+/* --- CHAQUE ÉLÉMENT --- */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Le petit rond sur la ligne */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 13px; 
+    background-color: #190b20;
+    border: 2px solid #eb38f8;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(239, 56, 248, 0.8);
+}
+
+/* --- LE CONTENU (LA CARTE) --- */
+.timeline-content {
+    padding: 20px;
+    background: rgba(45, 30, 59, 0.5);
+    border: 1px solid rgba(155, 56, 248, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    background: rgba(47, 30, 59, 0.8);
+    transform: translateX(10px);
+    border-color: #eb38f8;
+}
+
+.timeline-content h3 {
+    color: #eb38f8;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.timeline-content p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #1b0b20;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(184, 56, 248, 0.1);
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.cv-preview {
+    width: 120px; /* Taille de l'aperçu */
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(191, 56, 248, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cv-preview:hover {
+    transform: scale(1.1);
+    border-color: #c538f8;
+    box-shadow: 0 0 15px rgba(223, 56, 248, 0.4);
+}
+
+.cv-btn {
+    background-color: #b131d1;
+    color: #0b1120;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cv-btn:hover {
+    background-color: #e37dfc;
+    box-shadow: 0 0 10px rgba(216, 56, 248, 0.5);
+}
+
+footer p {
+    color: #b194b8;
+    font-size: 0.9rem;
+}
