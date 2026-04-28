@@ -87,7 +87,7 @@
                         <span class="year-badge">2026</span>
                     </div>
                     <p>Projet de développement d'un site web pour une agence de voyage au Japon</p>
-                    <button class="view-project-btn" onclick="openModal('modal-maintenance')">Voir le projet</button>
+                    <button class="view-project-btn" onclick="openModal('modal-japon')">Voir le projet</button>
                     <div class="tags">
                         <span class="tag">HTML:5</span>
                         <span class="tag">CSS:3</span>
@@ -104,7 +104,7 @@
                         <span class="year-badge">2026</span>
                     </div>
                     <p>Application de gestion d'une Bibliothèque réalisée en stage sur Odoo</p>
-                    <button class="view-project-btn" onclick="openModal('modal-maintenance')">Voir le projet</button>
+                    <button class="view-project-btn" onclick="openModal('modal-biblio')">Voir le projet</button>
                     <div class="tags">
                         <span class="tag">Python</span>
                         <span class="tag">Xml</span>
@@ -122,7 +122,7 @@
                         <span class="year-badge">2025</span>
                     </div>
                     <p>Application de calcul pour enfants, ou les enfants peuvent pratiquer leurs compétences mathématiques</p>
-                    <button class="view-project-btn" onclick="openModal('modal-maintenance')">Voir le projet</button>
+                    <button class="view-project-btn" onclick="openModal('modal-calcul')">Voir le projet</button>
                     <div class="tags">
                         <span class="tag">C#</span>
                     </div>
@@ -139,7 +139,7 @@
                         <span class="year-badge">2025</span>
                     </div>
                     <p>Projet de gestion d'un parc informatique avec GLPI</p>
-                    <button class="view-project-btn" onclick="openModal('modal-maintenance')">Voir le projet</button>
+                    <button class="view-project-btn" onclick="openModal('modal-glpi')">Voir le projet</button>
                     <div class="tags">
                         <span class="tag">GLPI</span>
                         <span class="tag">Debian</span>
@@ -149,27 +149,410 @@
 
             <!-- agrandissement des cartes (projet) -->
 
+            <!-- Modal Maintenance -->
             <div class="modal-overlay" id="modal-maintenance">
-                <div class="modal">
-                    <div class="modal-header">
-                        <h2>Module de Maintenance</h2>
-                        <button class="modal-close" onclick="closeModal('modal-maintenance')">✕</button>
-                    </div>
-                    <p>Module réalisé en stage sur Odoo — gestion des demandes de maintenance.</p>
-
-                    <h4>Compétences développées</h4>
-                    <div class="skills-list">
-                        <span class="skill">Développement Python</span>
-                        <span class="skill">Création de modules Odoo</span>
-                        <span class="skill">Modélisation XML (vues)</span>
-                        <span class="skill">Gestion de base de données</span>
-                    </div>
-
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-maintenance')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/Maintenance.png" alt="Module de Maintenance">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Module de Maintenance</h2>
                     <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">XML</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">XML</span>
                     </div>
                 </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Module développé lors de mon stage chez [entreprise] sur la plateforme Odoo 17.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Permettre la gestion des demandes de maintenance et le suivi des interventions.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Création du module Odoo from scratch</li>
+                        <li>Modélisation des vues XML (liste, formulaire, kanban)</li>
+                        <li>Gestion des statuts et workflow</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Prise en main de l'architecture d'Odoo et de la logique MVC propre au framework.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Japon -->
+            <div class="modal-overlay" id="modal-japon">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-japon')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/japon.jpg" alt="Site Excursion Japon">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Site web Excursion JAPON</h2>
+                    <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Projet réalisé dans le cadre de [cours / BTS] pour une agence de voyage fictive.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Concevoir un site vitrine attractif présentant des excursions au Japon.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Maquette et charte graphique</li>
+                        <li>Structure HTML sémantique</li>
+                        <li>Mise en page responsive en CSS</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Gestion du responsive sur mobile et cohérence visuelle de la mise en page.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Bibliothèque -->
+            <div class="modal-overlay" id="modal-biblio">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-biblio')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/ModuleBiblio.png" alt="Application Bibliothèque">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Application de gestion d'une Bibliothèque</h2>
+                    <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">XML</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Application développée en stage sur Odoo pour gérer le catalogue d'une bibliothèque.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Gérer les livres, les emprunts et les adhérents depuis une interface Odoo.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Modèles Python (livres, membres, emprunts)</li>
+                        <li>Vues et menus XML</li>
+                        <li>Règles de gestion des emprunts</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Gestion des relations entre modèles (Many2many, One2many) dans Odoo.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Calcul enfant -->
+            <div class="modal-overlay" id="modal-calcul">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-calcul')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/tableau.jpg" alt="Application calcul enfant">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Application de calcul pour enfants</h2>
+                    <div class="tags">
+                    <span class="tag">C#</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Projet réalisé en [cours / BTS] pour apprendre la programmation orientée objet avec C#.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Créer une application ludique permettant aux enfants de s'entraîner au calcul mental.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Interface graphique Windows Forms</li>
+                        <li>Génération aléatoire d'exercices</li>
+                        <li>Système de score et niveaux de difficulté</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Adapter le niveau de difficulté dynamiquement selon les résultats de l'enfant.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal GLPI -->
+            <div class="modal-overlay" id="modal-glpi">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-glpi')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/glpi.png" alt="GLPI parc informatique">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Gestionnaire Libre de parc informatique</h2>
+                    <div class="tags">
+                    <span class="tag">GLPI</span>
+                    <span class="tag">Debian</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Projet de mise en place d'un outil de gestion de parc informatique sur serveur Debian.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Inventorier le matériel, gérer les tickets d'incident et suivre les licences logicielles.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Installation et configuration de GLPI sur Debian</li>
+                        <li>Inventaire automatique avec agent FusionInventory</li>
+                        <li>Gestion des tickets et des utilisateurs</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Configuration du serveur Apache et des droits d'accès sous Linux.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div><!-- Modal Maintenance -->
+            <div class="modal-overlay" id="modal-maintenance">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-maintenance')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/Maintenance.png" alt="Module de Maintenance">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Module de Maintenance</h2>
+                    <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">XML</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Module développé lors de mon stage chez [entreprise] sur la plateforme Odoo 17.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Permettre la gestion des demandes de maintenance et le suivi des interventions.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Création du module Odoo from scratch</li>
+                        <li>Modélisation des vues XML (liste, formulaire, kanban)</li>
+                        <li>Gestion des statuts et workflow</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Prise en main de l'architecture d'Odoo et de la logique MVC propre au framework.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Japon -->
+            <div class="modal-overlay" id="modal-japon">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-japon')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/japon.jpg" alt="Site Excursion Japon">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Site web Excursion JAPON</h2>
+                    <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Projet réalisé dans le cadre de [cours / BTS] pour une agence de voyage fictive.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Concevoir un site vitrine attractif présentant des excursions au Japon.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Maquette et charte graphique</li>
+                        <li>Structure HTML sémantique</li>
+                        <li>Mise en page responsive en CSS</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Gestion du responsive sur mobile et cohérence visuelle de la mise en page.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Bibliothèque -->
+            <div class="modal-overlay" id="modal-biblio">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-biblio')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/ModuleBiblio.png" alt="Application Bibliothèque">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Application de gestion d'une Bibliothèque</h2>
+                    <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">XML</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Application développée en stage sur Odoo pour gérer le catalogue d'une bibliothèque.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Gérer les livres, les emprunts et les adhérents depuis une interface Odoo.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Modèles Python (livres, membres, emprunts)</li>
+                        <li>Vues et menus XML</li>
+                        <li>Règles de gestion des emprunts</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Gestion des relations entre modèles (Many2many, One2many) dans Odoo.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Calcul enfant -->
+            <div class="modal-overlay" id="modal-calcul">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-calcul')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/tableau.jpg" alt="Application calcul enfant">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Application de calcul pour enfants</h2>
+                    <div class="tags">
+                    <span class="tag">C#</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Projet réalisé en [cours / BTS] pour apprendre la programmation orientée objet avec C#.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Créer une application ludique permettant aux enfants de s'entraîner au calcul mental.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Interface graphique Windows Forms</li>
+                        <li>Génération aléatoire d'exercices</li>
+                        <li>Système de score et niveaux de difficulté</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Adapter le niveau de difficulté dynamiquement selon les résultats de l'enfant.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal GLPI -->
+            <div class="modal-overlay" id="modal-glpi">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-glpi')">✕</button>
+                <div class="modal-img">
+                <img src="assets/img/glpi.png" alt="GLPI parc informatique">
+                </div>
+                <div class="modal-body">
+                <div class="modal-top">
+                    <h2>Gestionnaire Libre de parc informatique</h2>
+                    <div class="tags">
+                    <span class="tag">GLPI</span>
+                    <span class="tag">Debian</span>
+                    </div>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-section">
+                    <h4>Contexte</h4>
+                    <p>Projet de mise en place d'un outil de gestion de parc informatique sur serveur Debian.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Objectif</h4>
+                    <p>Inventorier le matériel, gérer les tickets d'incident et suivre les licences logicielles.</p>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Points réalisés</h4>
+                    <ul>
+                        <li>Installation et configuration de GLPI sur Debian</li>
+                        <li>Inventaire automatique avec agent FusionInventory</li>
+                        <li>Gestion des tickets et des utilisateurs</li>
+                    </ul>
+                    </div>
+                    <div class="modal-section">
+                    <h4>Difficultés</h4>
+                    <p>Configuration du serveur Apache et des droits d'accès sous Linux.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
             </div>
         </section>
         <section class="skills-section">
@@ -299,5 +682,6 @@
         </div>
         <p>🌺 Merci d'avoir visité mon portfolio 🌺</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
