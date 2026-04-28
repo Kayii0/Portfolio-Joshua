@@ -153,8 +153,15 @@
             <div class="modal-overlay" id="modal-maintenance">
             <div class="modal">
                 <button class="modal-close" onclick="closeModal('modal-maintenance')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/Maintenance.png" alt="Module de Maintenance">
+                <div class="modal-slider">
+                <button class="slider-btn prev" onclick="changeSlide('maintenance', -1)">&#8249;</button>
+                <div class="slider-track" id="slider-maintenance">
+                    <img src="assets/img/Maintenance.png" alt="slide 1">
+                    <img src="assets/img/maintenance2.jpg" alt="slide 2">
+                    <img src="assets/img/maintenance3.jpg" alt="slide 3">
+                </div>
+                <button class="slider-btn next" onclick="changeSlide('maintenance', 1)">&#8250;</button>
+                <div class="slider-dots" id="dots-maintenance"></div>
                 </div>
                 <div class="modal-body">
                 <div class="modal-top">
@@ -194,8 +201,15 @@
             <div class="modal-overlay" id="modal-japon">
             <div class="modal">
                 <button class="modal-close" onclick="closeModal('modal-japon')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/japon.jpg" alt="Site Excursion Japon">
+                <div class="modal-slider">
+                <button class="slider-btn prev" onclick="changeSlide('japon', -1)">&#8249;</button>
+                <div class="slider-track" id="slider-japon">
+                    <img src="assets/img/japon.jpg" alt="slide 1">
+                    <img src="assets/img/japon2.jpg" alt="slide 2">
+                    <img src="assets/img/japon3.jpg" alt="slide 3">
+                </div>
+                <button class="slider-btn next" onclick="changeSlide('japon', 1)">&#8250;</button>
+                <div class="slider-dots" id="dots-japon"></div>
                 </div>
                 <div class="modal-body">
                 <div class="modal-top">
@@ -235,8 +249,14 @@
             <div class="modal-overlay" id="modal-biblio">
             <div class="modal">
                 <button class="modal-close" onclick="closeModal('modal-biblio')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/ModuleBiblio.png" alt="Application Bibliothèque">
+                <div class="modal-slider">
+                <button class="slider-btn prev" onclick="changeSlide('biblio', -1)">&#8249;</button>
+                <div class="slider-track" id="slider-biblio">
+                    <img src="assets/img/ModuleBiblio.png" alt="slide 1">
+                    <img src="assets/img/biblio2.jpg" alt="slide 2">
+                </div>
+                <button class="slider-btn next" onclick="changeSlide('biblio', 1)">&#8250;</button>
+                <div class="slider-dots" id="dots-biblio"></div>
                 </div>
                 <div class="modal-body">
                 <div class="modal-top">
@@ -276,8 +296,13 @@
             <div class="modal-overlay" id="modal-calcul">
             <div class="modal">
                 <button class="modal-close" onclick="closeModal('modal-calcul')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/tableau.jpg" alt="Application calcul enfant">
+                <div class="modal-slider">
+                <button class="slider-btn prev" onclick="changeSlide('calcul', -1)">&#8249;</button>
+                <div class="slider-track" id="slider-calcul">
+                    <img src="assets/img/tableau.jpg" alt="slide 1">
+                </div>
+                <button class="slider-btn next" onclick="changeSlide('calcul', 1)">&#8250;</button>
+                <div class="slider-dots" id="dots-calcul"></div>
                 </div>
                 <div class="modal-body">
                 <div class="modal-top">
@@ -316,210 +341,13 @@
             <div class="modal-overlay" id="modal-glpi">
             <div class="modal">
                 <button class="modal-close" onclick="closeModal('modal-glpi')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/glpi.png" alt="GLPI parc informatique">
+                <div class="modal-slider">
+                <button class="slider-btn prev" onclick="changeSlide('glpi', -1)">&#8249;</button>
+                <div class="slider-track" id="slider-glpi">
+                    <img src="assets/img/glpi.png" alt="slide 1">
                 </div>
-                <div class="modal-body">
-                <div class="modal-top">
-                    <h2>Gestionnaire Libre de parc informatique</h2>
-                    <div class="tags">
-                    <span class="tag">GLPI</span>
-                    <span class="tag">Debian</span>
-                    </div>
-                </div>
-                <div class="modal-sections">
-                    <div class="modal-section">
-                    <h4>Contexte</h4>
-                    <p>Projet de mise en place d'un outil de gestion de parc informatique sur serveur Debian.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Objectif</h4>
-                    <p>Inventorier le matériel, gérer les tickets d'incident et suivre les licences logicielles.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Points réalisés</h4>
-                    <ul>
-                        <li>Installation et configuration de GLPI sur Debian</li>
-                        <li>Inventaire automatique avec agent FusionInventory</li>
-                        <li>Gestion des tickets et des utilisateurs</li>
-                    </ul>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Difficultés</h4>
-                    <p>Configuration du serveur Apache et des droits d'accès sous Linux.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div><!-- Modal Maintenance -->
-            <div class="modal-overlay" id="modal-maintenance">
-            <div class="modal">
-                <button class="modal-close" onclick="closeModal('modal-maintenance')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/Maintenance.png" alt="Module de Maintenance">
-                </div>
-                <div class="modal-body">
-                <div class="modal-top">
-                    <h2>Module de Maintenance</h2>
-                    <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">XML</span>
-                    </div>
-                </div>
-                <div class="modal-sections">
-                    <div class="modal-section">
-                    <h4>Contexte</h4>
-                    <p>Module développé lors de mon stage chez [entreprise] sur la plateforme Odoo 17.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Objectif</h4>
-                    <p>Permettre la gestion des demandes de maintenance et le suivi des interventions.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Points réalisés</h4>
-                    <ul>
-                        <li>Création du module Odoo from scratch</li>
-                        <li>Modélisation des vues XML (liste, formulaire, kanban)</li>
-                        <li>Gestion des statuts et workflow</li>
-                    </ul>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Difficultés</h4>
-                    <p>Prise en main de l'architecture d'Odoo et de la logique MVC propre au framework.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Modal Japon -->
-            <div class="modal-overlay" id="modal-japon">
-            <div class="modal">
-                <button class="modal-close" onclick="closeModal('modal-japon')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/japon.jpg" alt="Site Excursion Japon">
-                </div>
-                <div class="modal-body">
-                <div class="modal-top">
-                    <h2>Site web Excursion JAPON</h2>
-                    <div class="tags">
-                    <span class="tag">HTML5</span>
-                    <span class="tag">CSS3</span>
-                    </div>
-                </div>
-                <div class="modal-sections">
-                    <div class="modal-section">
-                    <h4>Contexte</h4>
-                    <p>Projet réalisé dans le cadre de [cours / BTS] pour une agence de voyage fictive.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Objectif</h4>
-                    <p>Concevoir un site vitrine attractif présentant des excursions au Japon.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Points réalisés</h4>
-                    <ul>
-                        <li>Maquette et charte graphique</li>
-                        <li>Structure HTML sémantique</li>
-                        <li>Mise en page responsive en CSS</li>
-                    </ul>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Difficultés</h4>
-                    <p>Gestion du responsive sur mobile et cohérence visuelle de la mise en page.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Modal Bibliothèque -->
-            <div class="modal-overlay" id="modal-biblio">
-            <div class="modal">
-                <button class="modal-close" onclick="closeModal('modal-biblio')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/ModuleBiblio.png" alt="Application Bibliothèque">
-                </div>
-                <div class="modal-body">
-                <div class="modal-top">
-                    <h2>Application de gestion d'une Bibliothèque</h2>
-                    <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">XML</span>
-                    </div>
-                </div>
-                <div class="modal-sections">
-                    <div class="modal-section">
-                    <h4>Contexte</h4>
-                    <p>Application développée en stage sur Odoo pour gérer le catalogue d'une bibliothèque.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Objectif</h4>
-                    <p>Gérer les livres, les emprunts et les adhérents depuis une interface Odoo.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Points réalisés</h4>
-                    <ul>
-                        <li>Modèles Python (livres, membres, emprunts)</li>
-                        <li>Vues et menus XML</li>
-                        <li>Règles de gestion des emprunts</li>
-                    </ul>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Difficultés</h4>
-                    <p>Gestion des relations entre modèles (Many2many, One2many) dans Odoo.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Modal Calcul enfant -->
-            <div class="modal-overlay" id="modal-calcul">
-            <div class="modal">
-                <button class="modal-close" onclick="closeModal('modal-calcul')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/tableau.jpg" alt="Application calcul enfant">
-                </div>
-                <div class="modal-body">
-                <div class="modal-top">
-                    <h2>Application de calcul pour enfants</h2>
-                    <div class="tags">
-                    <span class="tag">C#</span>
-                    </div>
-                </div>
-                <div class="modal-sections">
-                    <div class="modal-section">
-                    <h4>Contexte</h4>
-                    <p>Projet réalisé en [cours / BTS] pour apprendre la programmation orientée objet avec C#.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Objectif</h4>
-                    <p>Créer une application ludique permettant aux enfants de s'entraîner au calcul mental.</p>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Points réalisés</h4>
-                    <ul>
-                        <li>Interface graphique Windows Forms</li>
-                        <li>Génération aléatoire d'exercices</li>
-                        <li>Système de score et niveaux de difficulté</li>
-                    </ul>
-                    </div>
-                    <div class="modal-section">
-                    <h4>Difficultés</h4>
-                    <p>Adapter le niveau de difficulté dynamiquement selon les résultats de l'enfant.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Modal GLPI -->
-            <div class="modal-overlay" id="modal-glpi">
-            <div class="modal">
-                <button class="modal-close" onclick="closeModal('modal-glpi')">✕</button>
-                <div class="modal-img">
-                <img src="assets/img/glpi.png" alt="GLPI parc informatique">
+                <button class="slider-btn next" onclick="changeSlide('glpi', 1)">&#8250;</button>
+                <div class="slider-dots" id="dots-glpi"></div>
                 </div>
                 <div class="modal-body">
                 <div class="modal-top">
