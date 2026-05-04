@@ -118,6 +118,26 @@ body {
   transform: translateY(-2px);
 }
 
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #24292e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-left: 12px;
+}
+
+.github-btn:hover {
+  background-color: #3d444d;
+  transform: translateY(-2px);
+}
+
 /* Photo de profil */
 .image-side {
   flex-shrink: 0;
@@ -261,15 +281,30 @@ body {
     color: white;
 }
 
+/* Bouton "Détails" des projets */
 .view-project-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #582a5f;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: transparent;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border: 1px solid #7a3a82;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background-color: #582a5f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(122, 58, 130, 0.4);
+}
+
+.view-project-btn:active {
+    transform: translateY(0px);
 }
 
 .card-header {
