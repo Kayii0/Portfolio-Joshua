@@ -598,7 +598,7 @@ body {
 /* Mon parcours */
 
 .parcours-section {
-    background-color: #160b20;
+    background-color: #1a0d18;
     padding: 80px 20px;
     color: white;
 }
@@ -657,14 +657,14 @@ body {
 /* --- LE CONTENU (LA CARTE) --- */
 .timeline-content {
     padding: 20px;
-    background: rgba(45, 30, 59, 0.5);
-    border: 1px solid rgba(155, 56, 248, 0.2);
+    background: rgba(58, 30, 59, 0.5);
+    border: 1px solid rgba(226, 56, 248, 0.2);
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 .timeline-content:hover {
-    background: rgba(47, 30, 59, 0.8);
+    background: rgba(59, 30, 56, 0.8);
     transform: translateX(10px);
     border-color: #eb38f8;
 }
@@ -730,4 +730,10 @@ footer {
 footer p {
     color: #b194b8;
     font-size: 0.9rem;
+}
+
+/* Smooth scroll */
+
+html {
+    scroll-behavior: smooth;
 }
